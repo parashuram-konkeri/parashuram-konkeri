@@ -49,8 +49,8 @@ function calculateTotal(){
     }
 
     // Update the total amount display
-    // totalAmountDisplay.textContent = 'Total Amount: ' + total;
-    totalAmountDisplay.innerHTML = 'Total Amount: ' + total;
+    totalAmountDisplay.textContent = 'Total Amount: ' + total;
+    // totalAmountDisplay.innerHTML = 'Total Amount: ' + total;
 }
 
 // Attach event listeners to buttons
