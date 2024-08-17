@@ -1,5 +1,5 @@
 # 💫 About Me:
-Check out my resume here-
+
 
 
 ## 🌐 Socials:
