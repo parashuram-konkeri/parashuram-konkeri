@@ -25,6 +25,14 @@ function addItem() {
         // nameCell.innerHTML=itemAmount;
         newRow.appendChild(amountCell);
 
+        const delete1 = document.createElement('button');
+        delete1.textContent = 'Delete';
+        delete1.addEventListener('click', function(e) {
+            e.stopPropagation();
+            itemTableBody.removeChild(newRow);
+        });
+        newRow.appendChild(delete1);
+
         itemTableBody.appendChild(newRow);
 
         // Clear input fields
@@ -49,8 +57,8 @@ function calculateTotal(){
     }
 
     // Update the total amount display
-    totalAmountDisplay.textContent = 'Total Amount: ' + total;
-    // totalAmountDisplay.innerHTML = 'Total Amount: ' + total;
+    // totalAmountDisplay.textContent = 'Total Amount: ' + total;
+    totalAmountDisplay.innerHTML = 'Total Amount: ' + total;
 }
 
 // Attach event listeners to buttons
